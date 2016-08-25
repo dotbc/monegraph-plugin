@@ -1,4 +1,5 @@
 const debug = require('debug')('monegraph-plugin');
+const _ = require('lodash');
 
 var teamData = [
   {
