@@ -1,0 +1,31 @@
+{
+  "name": "monegraph",
+  "displayName": "Monegraph",
+  "version": "0.0.0",
+  "description": "example Monegraph plugin for dotBC",
+  "publisher": "dotBC",
+  "main": "index.js",
+  "capabilities": {
+    "search": {
+      "name": "Monegraph",
+      "description": "Look up artists on Monegraph.",
+      "imageUrl": "public/images/icon-monegraph.png",
+      "searchImageUrl": "public/images/icon-monegraph-search.png",
+      "supportedSearchTypes": [
+        "artist"
+      ],
+      "commands": [
+        "search",
+        "getDetails"
+      ]
+    }
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cardstack-extension-manager": "git+ssh://git@github.com/mateodelnorte/cardstack-extension-manager.git",
+    "debug": "^2.2.0",
+    "lodash": "^4.15.0",
+    "superagent": "^2.2.0"
+  }
+}
